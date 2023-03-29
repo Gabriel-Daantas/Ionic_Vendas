@@ -37,7 +37,7 @@ export class HomePage implements OnInit {
 
   constructor(private router: Router) {
     // Para começar com alguma categoria selecionada basta utilizar:
-    // this.escolhaCardapio(cod da categoria);
+    // this.escolhaCardapio();
   }
 
   ngOnInit() {

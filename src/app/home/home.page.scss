@@ -1,0 +1,121 @@
+// #Bob {
+//     Bob 
+// }
+
+#container {
+    text-align: center;
+}
+
+ion-menu::part(backdrop) {
+    background-color: rgba(255, 0, 0, 0.650);
+}
+  
+ion-menu::part(container) {
+    border-radius: 0 20px 20px 0;
+  
+    box-shadow: 4px 0px 16px rgba(255, 0, 0, 0.295);
+}
+
+.menu-bar {
+    --background: var(--ion-color-vermelho);
+    color: #fff;
+}
+
+#choices {
+    --background: var(--ion-color-verde);
+    color: #fff;
+    text-align: center;
+}
+
+.choices {
+    --color: #fff;
+}
+
+
+.choices:active {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+ion-segment-button {
+    --indicator-color: none;
+    
+    --color: #08a391;
+    --color-checked: #fff;
+    --background-checked: rgba(10, 53, 10, 0.411);
+    
+    --border-radius: 25px;
+    --border-width-activated: 1px;
+
+    --ripple-color: transparent;
+}  
+
+ion-segment-button:hover {
+    --background-hover: transparent;
+    --ripple-color: transparent;
+    
+}
+
+ion-segment-button::part(indicator) {
+    height: 100%;
+    border-radius: 25px;
+    border-width: 2px;
+    border-color: #fff;
+    border-style: solid;
+}
+
+ion-segment-button::part(indicator-background) {
+    background: transparent;
+}
+
+// .menu-bar-content {
+//     --background: rgb(8, 95, 8);
+// }
+
+.cardapio {
+    margin: 15px auto;
+    text-align: center;
+    padding: 0 10px 10px 10px;
+    height: auto;
+    width: 90%;
+
+    border-radius: 20px;
+    box-shadow: 0 0 6px #000;
+    
+    @media (max-width: 575px) {
+        width: 300px;
+    }
+}
+
+img{
+    margin-bottom: 10px;
+    object-fit: cover;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    
+    @media (max-width: 575px) {
+        width: 250px;
+        height: 200px;
+    }
+}
+
+#nome_no_cardapio {
+    font-weight: 900;
+}
+
+#valor_no_cardapio {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.botao_detalhes {
+    text-transform: none;
+    --background: rgb(156, 156, 0);
+    color:  #fff;
+}
+
+#botao_carrinho {
+    --background: var(--ion-color-vermelho);
+}
